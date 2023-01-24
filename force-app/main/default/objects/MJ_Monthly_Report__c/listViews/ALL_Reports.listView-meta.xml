@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALL_Reports</fullName>
+    <columns>NAME</columns>
+    <columns>Firmcode__c</columns>
+    <columns>Month_Year__c</columns>
+    <columns>Monthly_Report_Month_Date__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>ALL Reports</label>
+</ListView>

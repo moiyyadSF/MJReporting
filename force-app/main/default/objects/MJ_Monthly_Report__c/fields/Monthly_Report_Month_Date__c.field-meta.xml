@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monthly_Report_Month_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( FIND(&quot;_&quot;,  Month_Year__c )=2, 
+DATE(Value(Right(Month_Year__c , 4)), value(left(Month_Year__c ,1)), 1 ),
+DATE(Value(Right(Month_Year__c , 4)), value(left(Month_Year__c ,2)), 1 )
+)</formula>
+    <inlineHelpText>This Formula returns the date - 01 - &lt;Monthly Report Month&gt; - &lt;Monthly Report Year&gt;</inlineHelpText>
+    <label>Monthly Report Month Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
